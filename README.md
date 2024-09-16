@@ -29,7 +29,7 @@ Object Oriented Languages is related to modeling real world entities. For exampl
 ## What lessons from the evolution of programming paradigms can inform future language development?
 
 ChatGPT4's Response:
->1. Embracing Multiparadigm Approaches
+>## 1. Embracing Multiparadigm Approaches
 >Lesson Learned:
 >
 >No single paradigm is a one-size-fits-all solution. Languages like Python, Scala, and Rust successfully integrate multiple paradigms to provide flexibility.
@@ -39,7 +39,7 @@ ChatGPT4's Response:
 >Flexibility: Designing languages that support procedural, object-oriented, functional, and other paradigms allows developers to choose the best approach for a given problem.
 >Interoperability of Paradigms: Seamless integration between paradigms within a language enhances productivity.
 >
->2. Concurrency and Parallelism as Core Features
+>## 2. Concurrency and Parallelism as Core Features
 >Lesson Learned:
 >
 >With the rise of multi-core processors, languages need to handle concurrency effectively.
@@ -49,7 +49,7 @@ ChatGPT4's Response:
 >Concurrency Primitives: Provide built-in support for concurrency and parallelism, making it easier to write efficient, concurrent programs.
 >Safe Concurrency Models: Emphasize models that reduce complexity, such as message passing over shared memory.
 >
->3. Memory Safety and Resource Management
+>## 3. Memory Safety and Resource Management
 >Lesson Learned:
 >
 >Languages like C offer control but are prone to memory errors.
@@ -64,20 +64,20 @@ ChatGPT pointed out several main lessons to keep track of when creating a new pr
 ## How to Guarantee Resource Safety in Software Development?
 
 ChatGPT4's Response:
->1. Use Automatic Resource Management
+>## 1. Use Automatic Resource Management
 >Garbage Collection
 >Definition: An automatic memory management system that reclaims memory occupied by objects no longer in use.
 >
 >Reference Counting
 >Definition: Keeps track of the number of references to a resource; when the count reaches zero, the resource is deallocated.
 >
->2. Use Smart Pointers
+>## 2. Use Smart Pointers
 >Definition: Objects that manage the lifetime of dynamically allocated memory through automatic deallocation.
 >
 >Prevents memory leaks by ensuring memory is freed when no longer needed.
 >Reduces the risk of dangling pointers.
 >
->3. Leverage RAII (Resource Acquisition Is Initialization)
+>## 3. Leverage RAII (Resource Acquisition Is Initialization)
 >Definition: A programming idiom where resource allocation and deallocation are tied to object lifetime.
 >
 >Implementation:
@@ -90,8 +90,6 @@ In order to create an optimal programming language in the future, ChatGPT said r
 ## How to Ensure a Programming Language Supports Concurrency
 
 ChatGPT4's Response:
-># Key Strategies to Support Concurrency in a Programming Language
->
 >## 1. Choose an Appropriate Concurrency Model
 >-Thread-Based Concurrency: Uses threads within a process to execute tasks concurrently.
 >-Event-Driven Concurrency: Employs an event loop to handle tasks asynchronously.
