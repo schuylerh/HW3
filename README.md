@@ -67,8 +67,11 @@ ChatGPT4's Response:
 >1. Use Automatic Resource Management
 >Garbage Collection
 >Definition: An automatic memory management system that reclaims memory occupied by objects no longer in use.
+
 >Reference Counting
 >Definition: Keeps track of the number of references to a resource; when the count reaches zero, the resource is deallocated.
+>
+>
 # References
 
 # Relevant Concepts
