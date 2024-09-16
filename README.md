@@ -147,5 +147,7 @@ ChatGPT4's Response:
 
 # References
 [Type Inference](https://repository.arizona.edu/bitstream/handle/10150/668754/azu_etd_hr_2023_0229_sip1_m.pdf?sequence=1&isAllowed=y).
+
 [Memory Safety and Resource Management](https://www.proquest.com/docview/2447559736?pq-origsite=gscholar&fromopenview=true&sourcetype=Dissertations%20&%20Theses).
+
 [Concurrency](https://scg.unibe.ch/archive/papers/Nier95bOOSC.pdf#page=49).
