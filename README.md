@@ -90,21 +90,21 @@ In order to create an optimal programming language in the future, ChatGPT said r
 ## How to Ensure a Programming Language Supports Concurrency
 
 ChatGPT4's Response:
->Key Strategies to Support Concurrency in a Programming Language
+># Key Strategies to Support Concurrency in a Programming Language
 >
->1. Choose an Appropriate Concurrency Model
+>## 1. Choose an Appropriate Concurrency Model
 >-Thread-Based Concurrency: Uses threads within a process to execute tasks concurrently.
 >-Event-Driven Concurrency: Employs an event loop to handle tasks asynchronously.
 >-Actor Model: Encapsulates state and behavior within "actors" that communicate via message passing.
 >-Communicating Sequential Processes (CSP): Processes interact through message passing over channels.
 >-Software Transactional Memory (STM): Manages concurrent access to shared memory using transactions.>
 >
->2. Provide Concurrency Primitives
+>## 2. Provide Concurrency Primitives
 >-Threads or Lightweight Processes:  Allow the creation and management of concurrent execution units.
 >-Coroutines: Support functions that can pause and resume execution.
 >-Asynchronous Functions: Enable non-blocking operations.
 >
->3. Implement Synchronization Mechanisms
+>## 3. Implement Synchronization Mechanisms
 >-Locks and Mutexes: Control access to shared data to prevent race conditions.
 >-Semaphores: Manage resource availability in concurrent environments.
 >-Atomic Operations: Ensure certain operations complete without interruption.
@@ -115,26 +115,26 @@ Another factor that needs to be considered in creating a new programming languag
 ## What kind of type inference is trending and should be used in future programming languages?
 
 ChatGPT4's Response:
->Current Trends in Type Inference:
+># Current Trends in Type Inference:
 >
->1. Local Type Inference
+>## 1. Local Type Inference
 >
 >Description: The compiler infers types within a local scope, such as the type of a variable based on its initializer.
 >
->2. Global Type Inference with Hindley-Milner Algorithm
+>## 2. Global Type Inference with Hindley-Milner Algorithm
 >
 >Description: A classical type inference algorithm that infers types globally across the entire program.
 >
->3. Bidirectional Type Inference
+>## 3. Bidirectional Type Inference
 >
 >Description: Combines both bottom-up and top-down inference, where the compiler uses context to infer types more effectively.
 >
->Recommendations for Future Programming Languages
->Support Local Type Inference with Option for Explicit Types
+># Recommendations for Future Programming Languages
+>## Support Local Type Inference with Option for Explicit Types
 >
 >Why: Provides flexibility for developers to omit types when they are obvious but specify them when clarity is needed.
 >
->Adopt Bidirectional Type Inference
+>## Adopt Bidirectional Type Inference
 >
 >Why: Balances the need for explicitness and inference, handling complex types while keeping the inference process understandable.
 
