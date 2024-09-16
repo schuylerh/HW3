@@ -61,17 +61,91 @@ ChatGPT4's Response:
 
 ChatGPT pointed out several main lessons to keep track of when creating a new programming language. Firstly, programming languages that are inflexible are not known to be very successful, multiple paradigms integrated together to provide flexibility is a good feature to have. Secondly, multi-core processors are rising in usage and programming languages should be able to utilize all of these resources with concurrency. To be an effective and optimal programming language, parallelism and concurrency should be easy to write. Lastly, memory. The programming langauge should be able to manage memory safely without frequently running into errors.
 
-# How to Guarantee Resource Safety in Software Development?
+## How to Guarantee Resource Safety in Software Development?
 
 ChatGPT4's Response:
 >1. Use Automatic Resource Management
 >Garbage Collection
 >Definition: An automatic memory management system that reclaims memory occupied by objects no longer in use.
-
+>
 >Reference Counting
 >Definition: Keeps track of the number of references to a resource; when the count reaches zero, the resource is deallocated.
 >
+>2. Use Smart Pointers
+>Definition: Objects that manage the lifetime of dynamically allocated memory through automatic deallocation.
 >
-# References
+>Prevents memory leaks by ensuring memory is freed when no longer needed.
+>Reduces the risk of dangling pointers.
+>
+>3. Leverage RAII (Resource Acquisition Is Initialization)
+>Definition: A programming idiom where resource allocation and deallocation are tied to object lifetime.
+>
+>Implementation:
+>
+>Resources are acquired in an object's constructor.
+>Resources are released in the object's destructor or when it goes out of scope.
+>
+In order to create an optimal programming language in the future, ChatGPT said resource safety is required. I explored this topic and wanted to know about ways to implement it. ChatGPT provided several methods, and three of them were resource management, smart pointers, and leveraging RAII. 
 
-# Relevant Concepts
+## How to Ensure a Programming Language Supports Concurrency
+
+ChatGPT4's Response:
+>Key Strategies to Support Concurrency in a Programming Language
+>
+>1. Choose an Appropriate Concurrency Model
+>-Thread-Based Concurrency: Uses threads within a process to execute tasks concurrently.
+>-Event-Driven Concurrency: Employs an event loop to handle tasks asynchronously.
+>-Actor Model: Encapsulates state and behavior within "actors" that communicate via message passing.
+>-Communicating Sequential Processes (CSP): Processes interact through message passing over channels.
+>-Software Transactional Memory (STM): Manages concurrent access to shared memory using transactions.>
+>
+>2. Provide Concurrency Primitives
+>-Threads or Lightweight Processes:  Allow the creation and management of concurrent execution units.
+>-Coroutines: Support functions that can pause and resume execution.
+>-Asynchronous Functions: Enable non-blocking operations.
+>
+>3. Implement Synchronization Mechanisms
+>-Locks and Mutexes: Control access to shared data to prevent race conditions.
+>-Semaphores: Manage resource availability in concurrent environments.
+>-Atomic Operations: Ensure certain operations complete without interruption.
+>-Channels or Message Queues: Facilitate safe communication between concurrent entities.
+>
+Another factor that needs to be considered in creating a new programming language is concurrency. To support this, several requirements were provided by ChatGPT. An appropriate concurrency model is needed so that processes can be executed synchronously.
+
+## What kind of type inference is trending and should be used in future programming languages?
+
+ChatGPT4's Response:
+>Current Trends in Type Inference:
+>
+>1. Local Type Inference
+>
+>Description: The compiler infers types within a local scope, such as the type of a variable based on its initializer.
+>
+>2. Global Type Inference with Hindley-Milner Algorithm
+>
+>Description: A classical type inference algorithm that infers types globally across the entire program.
+>
+>3. Bidirectional Type Inference
+>
+>Description: Combines both bottom-up and top-down inference, where the compiler uses context to infer types more effectively.
+>
+>Recommendations for Future Programming Languages
+>Support Local Type Inference with Option for Explicit Types
+>
+>Why: Provides flexibility for developers to omit types when they are obvious but specify them when clarity is needed.
+>
+>Adopt Bidirectional Type Inference
+>
+>Why: Balances the need for explicitness and inference, handling complex types while keeping the inference process understandable.
+
+# Notable Researchers
+- Alan Kay: Pioneer of object-oriented programming.
+- John McCarthy: Creator of Lisp and early contributor to functional programming.
+- Barbara Liskov: Contributions to data abstraction and type systems.
+- Martin Odersky: Creator of Scala, blending object-oriented and functional programming.
+- Joe Armstrong: Co-creator of Erlang, emphasizing concurrency and fault tolerance.
+
+# References
+[Type Inference](https://repository.arizona.edu/bitstream/handle/10150/668754/azu_etd_hr_2023_0229_sip1_m.pdf?sequence=1&isAllowed=y).
+[Memory Safety and Resource Management](https://www.proquest.com/docview/2447559736?pq-origsite=gscholar&fromopenview=true&sourcetype=Dissertations%20&%20Theses).
+[Concurrency](https://scg.unibe.ch/archive/papers/Nier95bOOSC.pdf#page=49).
