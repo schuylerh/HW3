@@ -20,4 +20,12 @@ ChatGPT4's Response:
 >Object-Oriented Languages focus on modeling real-world entities and their interactions, resulting in languages that support encapsulation, inheritance, and polymorphism to manage complexity in large software systems.
 >
 >Functional Languages emphasize immutability and pure functions, leading to languages that facilitate reasoning about code behavior, enable easier parallelization, and reduce side effects.
+>
+I liked ChatGPT's response here because of the comparisons that it is making for each paradigm. It relates procedural languages to hardware because they provide features and abstractions that map closely to the way computer hardware operates. Procedural langauges offer more control over the system's performance and behavior. For example, procedural langauges like C provide pointers that allow programmers to write and read specific memory locations directly. 
+
+Object Oriented Languages is related to modeling real world entities. For example, a car would be represented by a car class and attributes such as the make and model. This helps to manage complexity and keep things organized. 
+
+## 
+
+
 
