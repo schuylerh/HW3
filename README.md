@@ -16,6 +16,8 @@ This file documents my usage of an LLM to explore the topic of the influence of 
 
 ChatGPT4's Response:
 >Procedural Languages prioritize linear execution and straightforward procedures, leading to languages that are simple and close to hardware but may require more effort to manage complex systems.
+>
 >Object-Oriented Languages focus on modeling real-world entities and their interactions, resulting in languages that support encapsulation, inheritance, and polymorphism to manage complexity in large software systems.
+>
 >Functional Languages emphasize immutability and pure functions, leading to languages that facilitate reasoning about code behavior, enable easier parallelization, and reduce side effects.
 
